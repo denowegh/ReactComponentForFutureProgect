@@ -1,0 +1,8 @@
+.divHeader {
+    width: 100vh;
+}
+header {
+    min-height: 100px;
+    background: linear-gradient(45deg, #134e5e, #71b280);
+    padding: 0px 200px;
+}
