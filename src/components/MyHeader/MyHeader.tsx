@@ -7,7 +7,7 @@ const MyHeader = () => {
     return (
         <div className="divHeader">
             <header>
-                <h2>web dev</h2>
+                <h2>Nav bar </h2>
                 <input type="checkbox" className="switcher" id="menu" />
                 <label className="open" htmlFor="menu">
                     <FontAwesomeIcon className="symbol" icon={faBars} />
