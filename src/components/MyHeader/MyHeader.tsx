@@ -2,16 +2,15 @@ import React from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
-import "./MyHeader.module.css";
-import classes from "./MyHeader.module.css";
+import "./MyHeader.css";
 const MyHeader = () => {
     return (
-        <div>
+        <div className="divHeader">
             <header>
                 <h2>web dev</h2>
                 <input type="checkbox" className="switcher" id="menu" />
-                <label htmlFor="menu">
-                    <FontAwesomeIcon icon={faBars} />
+                <label className="open" htmlFor="menu">
+                    <FontAwesomeIcon className="symbol" icon={faBars} />
                 </label>
                 <nav>
                     <ul>
@@ -31,10 +30,10 @@ const MyHeader = () => {
                             <a href="#">Someone 5</a>
                         </li>
                     </ul>
+                    <label className="close" htmlFor="menu">
+                        <FontAwesomeIcon className="symbol" icon={faTimes} />
+                    </label>
                 </nav>
-                <label htmlFor="menu">
-                    <FontAwesomeIcon icon={faTimes} />
-                </label>
             </header>
         </div>
     );
