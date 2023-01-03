@@ -3,9 +3,12 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import "./MyHeader.css";
-const MyHeader = () => {
+import MyButtonSkew from "../MyButtonSkew/MyButtonSkew";
+const MyHeader: React.FunctionComponent<{ className: string }> = ({
+    className,
+}) => {
     return (
-        <div className="divHeader">
+        <div className={className}>
             <header>
                 <h2>Nav bar </h2>
                 <input type="checkbox" className="switcher" id="menu" />
@@ -15,19 +18,29 @@ const MyHeader = () => {
                 <nav>
                     <ul>
                         <li>
-                            <a href="#">Someone 1</a>
+                            <MyButtonSkew className=" liElement ">
+                                Someone 1
+                            </MyButtonSkew>
                         </li>
                         <li>
-                            <a href="#">Someone 2</a>
+                            <MyButtonSkew className=" liElement ">
+                                Someone 1
+                            </MyButtonSkew>
                         </li>
                         <li>
-                            <a href="#">Someone 3</a>
+                            <MyButtonSkew className=" liElement ">
+                                Someone 1
+                            </MyButtonSkew>
                         </li>
                         <li>
-                            <a href="#">Someone 4</a>
+                            <MyButtonSkew className=" liElement ">
+                                Someone 1
+                            </MyButtonSkew>
                         </li>
                         <li>
-                            <a href="#">Someone 5</a>
+                            <MyButtonSkew className=" liElement ">
+                                Someone 1
+                            </MyButtonSkew>
                         </li>
                     </ul>
                     <label className="close" htmlFor="menu">

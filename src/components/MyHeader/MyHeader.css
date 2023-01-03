@@ -1,5 +1,5 @@
 .divHeader {
-    width: 100vw;
+    width: 100%;
 }
 .open,
 .close {
@@ -13,6 +13,8 @@ header {
     align-items: center;
     justify-content: space-between;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 5;
 }
 header .switcher {
     position: absolute;
@@ -44,6 +46,9 @@ header a:hover {
 header label:hover {
     color: rgba(255, 255, 255, 0.3);
 }
+li .liElement {
+    font-size: medium;
+}
 @media screen and (max-width: 800px) {
     .open,
     .close {
@@ -72,10 +77,10 @@ header label:hover {
     ul {
         flex-direction: column;
     }
-    ul a {
-        padding: 20px;
+    li {
+        width: 100%;
     }
-    ul a:hover {
-        background-color: rgba(255, 255, 255, 0.3);
+    li .liElement {
+        width: 100%;
     }
 }
